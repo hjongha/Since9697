@@ -1,1 +1,143 @@
-asd
+<!Doctype html>
+<html>
+<head>
+	<title>Since9697 패션 추천</title>
+	<style>
+		body
+		{
+			background-color : linen;
+		}
+		.search
+		{
+			border-style : none;
+			font-size : 35px;
+		}
+		fieldset 
+		{ 
+			color : #888888;
+			display : inline;
+		}
+		.menu
+		{
+			background-color : linen;
+			border : 0;
+			cursor : pointer;
+			font-size : 15px;
+			font-weight : bold;
+		}
+		.shopping
+		{
+			background-color : linen;
+			border-style : none;
+			cursor : pointer;
+		}
+		button:hover { background-color:#FCE0D0;}
+	</style>
+</head>
+<body>
+	<h1>
+		<a href="" style="text-decoration:none;">
+			<button class="menu" type="image">
+				<img src="logo.png" alt="로고" width="50px" height="50px;">
+				<span style="font-size:35px;">&ensp;Since9697&ensp;</span>
+			</button>
+		</a>
+	</h1>
+	<hr>
+	<table border="0" style="background-color:linen;" width="100%">
+		<tr>
+			<td><input class="menu" type="button" value=" &ensp;&equiv;메뉴&ensp; "></td>
+			<td><input class="menu" type="button" value="&ensp; 내 옷장&ensp; "></td>
+			<td><input class="menu" type="button" value=" &ensp;옷 추천 받기 &ensp;"></td>
+			<td><input class="menu" type="button" value=" &ensp;게시판 &ensp;"></td>
+			<td><input class="menu" type="button" value="&ensp; 생필품&ensp; "></td>
+			<td><input class="menu" type="button" value=" &ensp;화장품&ensp; "></td>
+			<td><input class="menu" type="button" value="&ensp; 도서/문구&ensp; "></td>
+			<td><input class="menu" type="button" value=" &ensp;가전/디지털 &ensp;"></td>
+			<td><input class="menu" type="button" value=" &ensp;자동차/공구&ensp; "></td>
+			<td><input class="menu" type="button" value=" &ensp;티켓/공연&ensp; "></td>
+		</tr>
+	</table>
+	<hr>
+	<fieldset style="display:block; background-color:#CCCCCC;">
+		<a href="">
+			<button class="shopping" type="image" style="display:block; margin-left:auto; margin-right:auto; background-color:#CCCCCC;" >
+				<img src="sale1.png" alt="최고의 추천 패션" height="280px">
+			</button>
+		</a>
+	</fieldset>
+		<table border="0" cellspacing="0" align="center">
+			<tr>
+				<td>
+					<form action="" method="post">
+						<fieldset>
+							<input type="checkbox">IP보안<br>
+							<table border="1" style="border-color:#F7F7F7; background-color:white;" cellspacing="0">
+								<tr>
+									<td><input type="text" style="border-style : none;" size="15" placeholder="아이디"></td>
+									<td rowspan="2" style="background-color:#F7F7F7;">
+										<input type="submit" style="cursor:pointer; background-color:#F7F7F7; border-style : none;" value="로그인">
+									</td>
+								</tr>
+								<tr>
+									<td><input type="password" style="border-style : none;" size="15" placeholder="비밀번호"></td>
+								</tr>
+							</table>
+							<br>
+							<table border="0" style="background-color:linen; font-size:5px;" cellspacing="0">
+								<tr>
+									<td><a href="" style="text-decoration:none;">아이디 찾기</a></td>
+									<td>|</td>
+									<td><a href="" style="text-decoration:none;">비밀번호 찾기</a></td>
+									<td>|</td>
+									<td><a href="join.html" style="text-decoration:none;">회원가입</a></td>
+								</tr>
+							</table>
+						</fieldset>
+					</form>
+				</td>
+			</tr>
+		</table>
+	<hr>
+	<hr>
+	<table border="0" style="background-color:linen; color:#A0A0A0; text-align:center;" width="100%">
+		<tr>
+			<td>
+				<a href="" style="text-decoration:none;">
+					<input class="menu" type="button" value="회사소개">
+				</a>	
+			</td>
+			<td>|</td>
+			<td>
+				<a href="" style="text-decoration:none;">
+					<input class="menu" type="button" value="개인정보처리방침">
+				</a>
+			</td>
+			<td>|</td>
+			<td>
+				<a href="" style="text-decoration:none;">
+					<input class="menu" type="button" value="이용약관">
+				</a>
+			</td>
+			<td>|</td>
+			<td>
+				<a href="" style="text-decoration:none;">
+					<input class="menu" type="button" value="지식재산권보호센터">
+				</a>
+			</td>
+			<td>|</td>
+			<td>
+				<a href="" style="text-decoration:none;">
+					<input class="menu" type="button" value="제휴/광고안내">
+				</a>	
+			</td>
+			<td>|</td>
+			<td>
+				<a href="" style="text-decoration:none;">
+					<input class="menu" type="button" value="안전거래센터">
+				</a>	
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
