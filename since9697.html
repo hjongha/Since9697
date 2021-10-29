@@ -1,141 +1,169 @@
 <html>
-  <head>
-	<title>Since9697 패션갤러리</title>
-	<link href="style.css" rel="stylesheet" type="text/css"/>
-</head>
-<body>
-  <div class="nav">
-    <div class="nav-home">
-      <a href="" style="text-decoration:none;">
-        <button class="menu" type="image" style="background-color:white;">
-          <img src="since9697.jpg" width="200px" height="120px;">
-        </button>
-      </a>
-    </div>
-    <div class="nav-home">
-      <form action="" method="get">
-        <div class="nav-search"> <!-- 검색창 테두리 -->
-          <input class="search" type="text" size="50" placeholder="갤러리&통합검색" >
-          <button class="button" type="image" >
-            <img src="search.jpg" alt="이미지 버튼" height="35">
-          </button>
-        </div>
-      </form>
-    </div>
-  </div>
-	<hr>
-	<table border="0" style="background-color:#b8ff14;" width="100%">
-		<tbody>
-      <tr>
-        <td><input class="menu" type="button" value="&ensp;&ensp;&ensp;&ensp;여성&ensp;"></td>
-        <td><input class="menu" type="button" value="&ensp;남성&ensp;"></td>
-        <td><input class="menu" type="button" value="&ensp;내추럴&ensp;"></td>
-        <td><input class="menu" type="button" value="&ensp;빈티지&ensp;"></td>
-        <td><input class="menu" type="button" value="&ensp;스포츠&ensp;"></td>
-        <td><input class="menu" type="button" value="&ensp;아웃도어&ensp;"></td>
-        <td><input class="menu" type="button" value="&ensp;모던&ensp;"></td>
-        <td><input class="menu" type="button" value="&ensp;댄디&ensp;"></td>
-        <td><input class="menu" type="button" value="&ensp;액세서리&ensp;"></td>
-      </tr>
-    </tbody>
-  </table>
-<div class="container">
-    <div class="column_left">
-      <div class="shopping" type="image"><!-- 베스트 옷 추천 배경-->
-        <a href="">
-          <button class="best_c" style="background-color:#e9ffb6;  border-style : none; cursor:pointer;">
-            <img src="best clothes.jpg" alt="베스트 옷 조합" height="230px"><br>
-            베스트 옷 추천1
-          </button>
-        </a>
-        <a href="">
-          <button class="best_c" style="background-color:#e9ffb6;  border-style : none; cursor:pointer;">
-            <img src="best clothes.jpg" alt="베스트 옷 조합" height="230px"><br>
-            베스트 옷 추천2
-          </button>
-        </a>
-        <a href="">
-          <button class="best_c" style="background-color:#e9ffb6;  border-style : none; cursor:pointer;">
-            <img src="best clothes.jpg" alt="베스트 옷 조합" height="230px"><br>
-            베스트 옷 추천3
-          </button>
-        </a>
-      </div>
-      <hr>
-    </div>
-    
-   <div class="column_right">
-      <form action="" method="post">
-        <fieldset style="">
-          <input type="checkbox">IP보안<br>
-          <table border="1" style="border-color:#F7F7F7; background-color:white;" cellspacing="0">
-            <tbody>
-              <tr>
-                <td><input type="text" style="border-style : none;" size="15" placeholder="아이디"></td>
-                <td rowspan="2" style="background-color:#F7F7F7;">
-                  <input type="submit" onclick="check(this.form)" style="cursor:pointer; background-color:#F7F7F7; border-style : none;" value="로그인">
-                </td>
-              </tr>
-              <tr> 
-                <td><input type="password" style="border-style : none;" size="15" placeholder="비밀번호"></td>
-              </tr>
-            </tbody>
-          </table>
-          <br>
-          <table border="0" style="background-color:white; font-size:6px;" cellspacing="0">
-            <tbody>
-              <tr>
-                <td><a href="" style="text-decoration:none;">아이디 찾기</a></td>
-                <td>|</td>
-                <td><a href="" style="text-decoration:none;">비밀번호 찾기</a></td>
-                <td>|</td>
-                <td><a href="join.html" style="text-decoration:none;">회원가입</a></td>
-              </tr>
-            </tbody>
-          </table>
-        </fieldset>
-      </form>
-    </div>
-  </div>
-<hr>
-	<table border="0" style="background-color:white; color:#A0A0A0; text-align:center;" width="100%">
-		<tr>
-			<td>
+	<head>
+		<title>Since9697 패션갤러리</title>
+		<link href="style.css" rel="stylesheet" type="text/css"/>
+		<script src="since9697.js"></script>
+	</head>
+	<body>
+		<div class="nav">
+			<div class="nav-home">
 				<a href="" style="text-decoration:none;">
-					<input class="logo" type="button" value="회사소개">
-				</a>	
-			</td>
-			<td>|</td>
-			<td>
-				<a href="" style="text-decoration:none;">
-					<input class="logo" type="button" value="개인정보처리방침">
+					<button class="logo" type="image" style="cursor:pointer;">
+						<img src="since9697.jpg" width="200px" height="120px;">
+					</button>
 				</a>
-			</td>
-			<td>|</td>
-			<td>
-				<a href="" style="text-decoration:none;">
-					<input class="logo" type="button" value="이용약관">
-				</a>
-			</td>
-			<td>|</td>
-			<td>
-				<a href="" style="text-decoration:none;">
-					<input class="logo" type="button" value="지식재산권보호센터">
-				</a>
-			</td>
-			<td>|</td>
-			<td>
-				<a href="" style="text-decoration:none;">
-					<input class="logo" type="button" value="제휴/광고안내">
-				</a>	
-			</td>
-			<td>|</td>
-			<td>
-				<a href="" style="text-decoration:none;">
-					<input class="logo" type="button" value="안전거래센터">
-				</a>	
-			</td>
-		</tr>
-	</table>
-</body>
+			</div>
+			<div class="nav-home">
+				<form action="" method="get">
+					<div class="nav-search"> <!-- 검색창 테두리 -->
+						<input class="search" type="text" size="50" placeholder="갤러리&통합검색" >
+						<button class="button" type="image" >
+							<img src="search.jpg" alt="이미지 버튼" height="35">
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<hr>
+	
+		<table border="0" style="background-color:#b8ff14;" width="100%;">
+			<tbody>
+				<tr>
+					<td><a href=""><input class="menu" type="button" value="  여성  "></a></td>
+					<td><a href=""><input class="menu" type="button" value="  남성  "></a></td>
+					<td><a href=""><input class="menu" type="button" value="  내추럴  "></a></td>
+					<td><a href=""><input class="menu" type="button" value="  빈티지  "></a></td>
+					<td><a href=""><input class="menu" type="button" value="  스포츠  "></a></td>
+					<td><a href=""><input class="menu" type="button" value="  아웃도어  "></a></td>
+					<td><a href=""><input class="menu" type="button" value="  모던  "></a></td>
+					<td><a href=""><input class="menu" type="button" value="  댄디  "></a></td>
+					<td><a href=""><input class="menu" type="button" value="  엑세서리  "></a></td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="container">
+			<div class="column_left">
+				<div class="shopping" type="image"><!-- 베스트 옷 추천 배경-->
+					<a href="">
+						<button class="best_c" style="background-color:#e9ffb6;  border-style : none; cursor:pointer;">
+							<img src="best clothes.jpg" alt="베스트 옷 조합" height="230px"><br>
+							베스트 옷 추천1
+						</button>
+					</a>
+					<a href="">
+						<button class="best_c" style="background-color:#e9ffb6;  border-style : none; cursor:pointer;">
+							<img src="best clothes.jpg" alt="베스트 옷 조합" height="230px"><br>
+							베스트 옷 추천2
+						</button>
+					</a>
+					<a href="">
+						<button class="best_c" style="background-color:#e9ffb6;  border-style : none; cursor:pointer;">
+							<img src="best clothes.jpg" alt="베스트 옷 조합" height="230px"><br>
+							베스트 옷 추천3
+						</button>
+					</a>
+				</div>
+				<hr>
+				<span class="section">
+					게시판
+					<p align = "right">
+						<button type="image" onclick="page_left()">
+							<img src="left.png" alt="이미지 버튼" height="15">
+						</button>
+						1/2 
+						<button type="image" onclick="page_right()">
+							<img src="right.png" alt="이미지 버튼" height="15">
+						</button>
+						<br>
+					<ul>
+						<hr>
+						<li><a href="">"가을 옷 어떤가요1?"</a></li>
+						<hr>
+						<li><a href="">"가을 옷 어떤가요2?"</a></li>
+						<hr>
+						<li><a href="">"가을 옷 어떤가요3?"</a></li>
+						<hr>
+						<li><a href="">"가을 옷 어떤가요4?"</a></li>
+						<hr>
+						<li><a href="">"가을 옷 어떤가요5?"</a></li>
+						<hr>
+						<li><a href="">"가을 옷 어떤가요6?"</a></li>
+						<hr>
+					</ul>
+				</span>
+			<hr>
+			</div>
+
+			<div class="column_right">
+				<form name="login">
+					<fieldset style="">
+						<input type="checkbox">IP보안<br>
+						<table border="1" style="border-color:#F7F7F7; background-color:white;" cellspacing="0">
+							<tbody>
+								<tr>
+									<td><input name="userid" type="text" style="border-style : none;" size="15" placeholder="아이디"/></td>
+									<td rowspan="2" style="background-color:#F7F7F7;">
+										<input type="submit" onclick="check(this.form)" style="cursor:pointer; background-color:#F7F7F7; border-style : none;" value="로그인"/>
+									</td>
+								</tr>
+								<tr>
+									<td><input name="userpass" type="password" style="border-style : none;" size="15" placeholder="비밀번호"/></td>
+								</tr>
+							</tbody>
+						</table>
+						<table border="0" style="background-color:white; font-size:6px;" cellspacing="0">
+							<tbody>
+								<tr>
+									<td><a href="" style="text-decoration:none;">아이디 찾기</a></td>
+									<td>|</td>
+									<td><a href="" style="text-decoration:none;">비밀번호 찾기</a></td>
+									<td>|</td>
+									<td><a href="join.html" style="text-decoration:none;">회원가입</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<table border="0" style="background-color:white; color:#A0A0A0; text-align:center;" width="100%">
+			<tr>
+				<td>
+					<a href="" style="text-decoration:none;">
+						<input class="logo" type="button" value="회사소개">
+					</a>	
+				</td>
+				<td>|</td>
+				<td>
+					<a href="" style="text-decoration:none;">
+						<input class="logo" type="button" value="개인정보처리방침">
+					</a>
+				</td>
+				<td>|</td>
+				<td>
+					<a href="" style="text-decoration:none;">
+						<input class="logo" type="button" value="이용약관">
+					</a>
+				</td>
+				<td>|</td>
+				<td>
+					<a href="" style="text-decoration:none;">
+						<input class="logo" type="button" value="지식재산권보호센터">
+					</a>
+				</td>
+				<td>|</td>
+				<td>
+					<a href="" style="text-decoration:none;">
+						<input class="logo" type="button" value="제휴/광고안내">
+					</a>	
+				</td>
+				<td>|</td>
+				<td>
+					<a href="" style="text-decoration:none;">
+						<input class="logo" type="button" value="안전거래센터">
+					</a>	
+				</td>
+			</tr>
+		</table>
+	</body>
 </html>
