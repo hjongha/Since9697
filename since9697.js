@@ -18,8 +18,14 @@ function plusmember(form)
 function check(form)
 {
 	for(var i=0; i<member.length; i++) {
-		if(document.writeln(form.id == member[i].id)
-			return 1;
+		if (document.writeln(form.passward == member[i].passward)) {
+				return 1;
+			}
+			else {
+				alert("아이디와 비밀번호를 확인해주세요.");
+				return 0;
+			}
+		}
 	}
-	return 0;
+	alert("아이디와 비밀번호를 확인해주세요.");
 }
