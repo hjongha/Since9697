@@ -2,64 +2,6 @@
   <head>
 	<title>Since9697 패션갤러리</title>
 	<link href="style.css" rel="stylesheet" type="text/css"/>
-	<style>
-		body{
-  			background-color: white;
-  			margin-left: 100px;
-  			margin-right: 100px;
-			}
-		.nav{
-  			background-color: white;
-  			text-align: center;
-		}
-			img{
- 			vertical-align: middle;
-	}
-		.nav-home{
-		  	display: inline-block;
-		}
-		.menu
-		{
-			background-color : #b8ff14;
-			border : 0;
-			cursor : pointer;
-			font-size : 15px;
-			font-weight : bold;
-		}
-		.nav-search{
-		  border:3px  solid #b8ff14; 
-		  border-radius:5px; 
-		  background-color:white;
-	}
-	.search{
-		  border-style : none;
-		  font-size : 15px;
-	}
-	.button{
-		  font-size: 25px;
-	}
-	.new-nav{
-		  text-align: left;
-		  background-color: white;
-	}
-	.log-in-line{
-		  display: inline-block;
-	}
-	fieldset { 
-		  color : #888888;
-		  display : inline;
-		  float: right;
-	}
-
-	.shopping {
-		  background-color : linen;
-		  border-style : none;
-		  cursor : pointer;	
-	}
-	button:hover { 
-		  background-color:white;
-	}
-	</style>
 </head>
 <body>
   <div class="nav">
@@ -97,19 +39,32 @@
       </tr>
     </tbody>
   </table>
-	<hr>
-  <div class="new-nav">
-    <div class="log-in-line">
-      <fieldset style="display:block; background-color:#CCCCCC;">
+<div class="container">
+    <div class="column_left">
+      <div class="shopping" type="image"><!-- 베스트 옷 추천 배경-->
         <a href="">
-          <button class="shopping" type="image" style="display:block; margin-left:auto; margin-right:auto; background-color:#CCCCCC;">
+          <button class="best_c" style="background-color:#e9ffb6;  border-style : none; cursor:pointer;">
             <img src="best clothes.jpg" alt="베스트 옷 조합" height="230px"><br>
-            베스트 옷 추천
+            베스트 옷 추천1
           </button>
         </a>
-      </fieldset>
+        <a href="">
+          <button class="best_c" style="background-color:#e9ffb6;  border-style : none; cursor:pointer;">
+            <img src="best clothes.jpg" alt="베스트 옷 조합" height="230px"><br>
+            베스트 옷 추천2
+          </button>
+        </a>
+        <a href="">
+          <button class="best_c" style="background-color:#e9ffb6;  border-style : none; cursor:pointer;">
+            <img src="best clothes.jpg" alt="베스트 옷 조합" height="230px"><br>
+            베스트 옷 추천3
+          </button>
+        </a>
+      </div>
+      <hr>
     </div>
-    <div class="log-in-line">
+    
+   <div class="column_right">
       <form action="" method="post">
         <fieldset style="">
           <input type="checkbox">IP보안<br>
@@ -118,7 +73,7 @@
               <tr>
                 <td><input type="text" style="border-style : none;" size="15" placeholder="아이디"></td>
                 <td rowspan="2" style="background-color:#F7F7F7;">
-                  <input type="submit" style="cursor:pointer; background-color:#F7F7F7; border-style : none;" value="로그인">
+                  <input type="submit" onclick="check(this.form)" style="cursor:pointer; background-color:#F7F7F7; border-style : none;" value="로그인">
                 </td>
               </tr>
               <tr> 
@@ -142,45 +97,45 @@
       </form>
     </div>
   </div>
-		<table border="0" cellspacing="0" align="center">
-			<tbody>
-				<td>
-					<a href="" style="text-decoration:none;">
-						<button class="menu" type="text">
-							출석체크
-						</button>
-					</a>
-				</td>
-				<td>
-					<a href="" style="text-decoration:none;">
-						<button class="menu" type="text">
-							쿠폰
-						</button>
-					</a>
-				</td>
-				<td>
-					<a href="" style="text-decoration:none;">
-						<button class="menu" type="text">
-							등급혜택
-						</button>
-					</a>
-				</td>
-				<td>
-					<a href="" style="text-decoration:none;">
-						<button class="menu" type="text">
-							이벤트
-						</button>
-					</a>
-				</td>
-				<td>
-					<a href="" style="text-decoration:none;">
-						<button class="menu" type="text">
-							찜
-						</button>
-					</a>
-				</td>
-			</tr>
-		</tbody></table>
-	<hr>
+<hr>
+	<table border="0" style="background-color:white; color:#A0A0A0; text-align:center;" width="100%">
+		<tr>
+			<td>
+				<a href="" style="text-decoration:none;">
+					<input class="logo" type="button" value="회사소개">
+				</a>	
+			</td>
+			<td>|</td>
+			<td>
+				<a href="" style="text-decoration:none;">
+					<input class="logo" type="button" value="개인정보처리방침">
+				</a>
+			</td>
+			<td>|</td>
+			<td>
+				<a href="" style="text-decoration:none;">
+					<input class="logo" type="button" value="이용약관">
+				</a>
+			</td>
+			<td>|</td>
+			<td>
+				<a href="" style="text-decoration:none;">
+					<input class="logo" type="button" value="지식재산권보호센터">
+				</a>
+			</td>
+			<td>|</td>
+			<td>
+				<a href="" style="text-decoration:none;">
+					<input class="logo" type="button" value="제휴/광고안내">
+				</a>	
+			</td>
+			<td>|</td>
+			<td>
+				<a href="" style="text-decoration:none;">
+					<input class="logo" type="button" value="안전거래센터">
+				</a>	
+			</td>
+		</tr>
+	</table>
 </body>
 </html>
