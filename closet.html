@@ -1,98 +1,182 @@
-<html>
-	<head>
-		<title>Since9697 패션갤러리</title>
-		<link href="style.css" rel="stylesheet" type="text/css"/>
-		<script src="since9697.js"></script>
-	</head>
-	<body>
-		<div class="nav">
-			<div class="nav-home">
-				<a href="login.html" style="text-decoration:none;">
-					<button class="logo" type="image" style="cursor:pointer;">
-						<img src="since9697.jpg" width="200px" height="120px;">
-					</button>
-				</a>
-			</div>
-			<div class="nav-home">
-				<form action="" method="get">
-					<div class="nav-search"> <!-- 검색창 테두리 -->
-						<input class="search" type="text" size="50" placeholder="갤러리&통합검색" >
-						<button class="button" type="image" >
-							<img src="search.jpg" alt="이미지 버튼" height="35">
-						</button>
-					</div>
-				</form>
-			</div>
-		</div>
-		<hr>
-		<div class="container">
-			<div class="column_left">
-				<p> 상의 <br>
-				<script>
-					document.write("<img src='./top/top1.jpg' width='100px' height='100px'>");
-					document.write("<img src='./top/top2.jpg' width='100px' height='100px'>");
-					document.write("<img src='./top/top3.jpg' width='100px' height='100px'>");
-					document.write("<img src='./top/top4.jpg' width='100px' height='100px'>");
-					document.write("<img src='./top/top5.jpg' width='100px' height='100px'>");
-				</script>
-				</p>
-				<div class="pants" type="image">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <!-- Facebook Meta Tags / 페이스북 오픈 그래프 -->
+    <meta property="og:url" content="http://kindtiger.dothome.co.kr/insta">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="instagram">
+    <meta property="og:description" content="instagram clone">
+    <meta property="og:image" content="http://kindtiger.dothome.co.kr/insta/imgs/instagram.jpeg">
+    .
+    <!-- Twitter Meta Tags / 트위터 -->
+    <meta name="twitter:card" content="instagram clone">
+    <meta name="twitter:title" content="instagram">
+    <meta name="twitter:description" content="instagram clone">
+    <meta name="twitter:image" content="http://kindtiger.dothome.co.kr/insta/imgs/instagram.jpeg">
+
+    <!-- Google / Search Engine Tags / 구글 검색 엔진 -->
+    <meta itemprop="name" content="instagram">
+    <meta itemprop="description" content="instagram clone">
+    <meta itemprop="image" content="http://kindtiger.dothome.co.kr/insta/imgs/instagram.jpeg">
+
+
+    <title>instagram</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="shortcut icon" href="imgs/instagram.png">
+
+
+</head>
+<body>
+var express = required('express');
+var fs = required('fs');
+var app = express();
+
+<section id="container">
+
+    <header id="header">
+        <section class="h_inner">
+
+            <h1 class="logo">
+                <a href="index.html">
+                    <div class="sprite_insta_icon"></div>
+                    <div>
+                        <div class="sprite_write_logo"></div>
+                    </div>
+                </a>
+            </h1>
+
+            <div class="search_field">
+                <input type="text" placeholder="검색" tabindex="0">
+
+                <div class="fake_field">
+                    <span class=sprite_small_search_icon></span>
+                    <span>검색</span>
+                </div>
+            </div>
+
+
+            <div class="right_icons">
+                <a href="newcloth.html"><div class="sprite_plus_icon"></div></a>
+                <a href="new_post.html"><div class="sprite_camera_icon"></div></a>
+                <a href="login.html"><div class="sprite_compass_icon"></div></a>
+                <a href="follow.html"><div class="sprite_heart_icon_outline"></div></a>
+                <a href="closet.html"><div class="sprite_user_icon_outline"></div></a>
+            </div>
+        </section>
+    </header>
+
+
+    <div id="main_container">
+
+        <section class="b_inner">
+
+            <div class="hori_cont">
+                <div class="profile_wrap">
+                    <div class="profile_img">
+                        <img src="imgs/thumb.jpeg" alt="착한호랑이">
+                    </div>
+                </div>
+
+                <div class="detail">
+                    <div class="top">
+                        <div class="user_name">KindTiger</div>
+                        <a href="newcloth.html" class="profile_edit">옷장편집</a>
+                        <a href="#" class="logout">로그아웃</a>
+                    </div>
 					
-				</div>
-				
-			</div>
-			<div class="column_right" style="width:300px; height:100px; margin-right: 0px;">
-				<form name="login">
-					<fieldset style="">
-						<script>
-							document.write(memid[id_index]+"님 환영합니다!");
-						</script>
-						<br>
-						<a href=""><input type="button" value="내 옷장"></a>
-						<a href="since9697.html"><input type="button" value="로그아웃"></a>
-					</fieldset>
-				</form>
-			</div>
-		</div>
-		<hr>
-		<table class="Other_menu">
-			<tr>
-				<td>
-					<a href="" style="text-decoration:none;">
-						<input class="logo" type="button" value="회사소개">
-					</a>	
-				</td>
-				<td>|</td>
-				<td>
-					<a href="" style="text-decoration:none;">
-						<input class="logo" type="button" value="개인정보처리방침">
-					</a>
-				</td>
-				<td>|</td>
-				<td>
-					<a href="" style="text-decoration:none;">
-						<input class="logo" type="button" value="이용약관">
-					</a>
-				</td>
-				<td>|</td>
-				<td>
-					<a href="" style="text-decoration:none;">
-						<input class="logo" type="button" value="지식재산권보호센터">
-					</a>
-				</td>
-				<td>|</td>
-				<td>
-					<a href="" style="text-decoration:none;">
-						<input class="logo" type="button" value="제휴/광고안내">
-					</a>	
-				</td>
-				<td>|</td>
-				<td>
-					<a href="" style="text-decoration:none;">
-						<input class="logo" type="button" value="안전거래센터">
-					</a>	
-				</td>
-			</tr>
-		</table>
-	</body>
+
+                    <p class="about">
+                        <span class="nick_name">kindtigerrr</span>
+                        <span class="book_mark">bookmark</span>
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="mylist_contents contents_container active">
+                <div class="pic">
+                    <a href="rcom.html"><img src="imgs/img_section/cloth01.jfif" alt=""></a>
+                </div>
+                <div class="pic">
+                    <a href="rcom.html"><img src="imgs/img_section/cloth02.jpg" alt=""></a>
+                </div>
+                <div class="pic">
+                    <a href="rcom.html"> <img src="imgs/img_section/cloth03.jpg" alt=""></a>
+                </div>
+                <div class="pic">
+                    <a href="rcom.html"> <img src="imgs/img_section/cloth04.jpg" alt=""></a>
+                </div>
+                <div class="pic">
+                    <a href="rcom.html"> <img src="imgs/img_section/cloth05.jpg" alt=""></a>
+                </div>
+                <div class="pic">
+                    <a href="rcom.html"> <img src="imgs/img_section/cloth06.jpg" alt=""></a>
+                </div>
+                <div class="pic">
+                    <a href="rcom.html"> <img src="imgs/img_section/cloth01.jfif" alt=""></a>
+                </div>
+                <div class="pic">
+                    <a href="rcom.html"> <img src="imgs/img_section/cloth02.jpg" alt=""></a>
+                </div>
+                <div class="pic">
+                    <a href="rcom.html"> <img src="imgs/img_section/cloth03.jpg" alt=""></a>
+                </div>
+            </div>
+
+
+            <div class="bookmark_contents contents_container">
+                <div class="pic">
+                    <a href="rcom.html"><img src="imgs/img_section/cloth04.jpg" alt=""></a>
+                </div>
+                <div class="pic">
+                    <a href="rcom.html"><img src="imgs/img_section/cloth05.jpg" alt=""></a>
+                </div>
+                <div class="pic">
+                    <a href="rcom.html"> <img src="imgs/img_section/cloth06.jpg" alt=""></a>
+                </div>
+                <div class="pic">
+                    <a href="rcom.html"> <img src="imgs/img_section/cloth01.jfif" alt=""></a>
+                </div>
+                <div class="pic">
+                    <a href="rcom.html"> <img src="imgs/img_section/cloth02.jpg" alt=""></a>
+                </div>
+                <div class="pic">
+                    <a href="rcom.html"> <img src="imgs/img_section/cloth03.jpg" alt=""></a>
+                </div>
+                <div class="pic">
+                    <a href="rcom.html"> <img src="imgs/img_section/cloth04.jpg" alt=""></a>
+                </div>
+                <div class="pic">
+                    <a href="rcom.html"> <img src="imgs/img_section/cloth05.jpg" alt=""></a>
+                </div>
+                <div class="pic">
+                    <a href="rcom.html"> <img src="imgs/img_section/cloth06.jpg" alt=""></a>
+                </div>
+            </div>
+
+
+
+
+        </section>
+    </div>
+
+
+</section>
+
+
+<!--<script src="js/insta.js"></script>-->
+<script src="js/profile.js"></script>
+<script>
+
+
+
+</script>
+</body>
 </html>
