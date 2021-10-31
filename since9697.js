@@ -1,10 +1,16 @@
 var memid = new Array();
 memid[0] = "hjongha";
+<<<<<<< HEAD
 memid[1] = "kimjsjs";
 
 var mempass = new Array();
 mempass[0] = "1234";
 mempass[1] = "1q2w3e4r";
+=======
+
+var mempass = new Array();
+mempass[0] = "1234";
+>>>>>>> hjongha-patch-1
 
 var check_id = 0;
 
@@ -46,18 +52,25 @@ function joinmem(form)
 	}
 }
 
+<<<<<<< HEAD
 var id_index = 0;
 
+=======
+>>>>>>> hjongha-patch-1
 function check(form)
 {
 	for(var i=0; i<memid.length; i++) {
 		if(form.userid.value==memid[i]) {
 			if (form.userpass.value==mempass[i]) {
 				alert("환영합니다");
+<<<<<<< HEAD
 				id_index = i;
 				window.open("login.html");
 				window.close();
 				return i;
+=======
+				return 1;
+>>>>>>> hjongha-patch-1
 			}
 			else {
 				alert("아이디와 비밀번호를 확인해주세요.");
