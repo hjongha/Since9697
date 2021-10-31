@@ -1,7 +1,7 @@
 body{
   background-color: white;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin: 0 auto;
+  width: 1115px;
 }
 .nav{
   background-color: white;
@@ -13,11 +13,21 @@ img{
 .nav-home{
   display: inline-block;
 }
-.menu{
+.logo{
   background-color : white;
   border : 0;
   cursor : pointer;
   text-align: center;
+}
+.menu{
+  background-color : #b8ff14;
+  font-size: 16;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  border : 0;
+  cursor : pointer;
+  text-align: center;
+  margin-left: 25px;
 }
 .nav-search{
   border:3px  solid #b8ff14; 
@@ -31,25 +41,37 @@ img{
 .button{
   font-size: 25px;
 }
-.new-nav{
-  text-align: left;
-  background-color: white;
+.container{ 
+  position: relative;
+  height: 700px;
+  width: 100%;
+  padding: 20px 30px;
+  margin: auto auto;
 }
-.log-in-line{
-  display: inline-block;
+.column_left{
+  position: absolute;
+  left: 0;
+}
+.column_right{
+  margin-right: 60px;
+  position: absolute;
+  right: 0;
 }
 fieldset { 
   color : #888888;
   display : inline;
-  float: right;
 }
-.shopping
-{
-  background-color : linen;
+.shopping{
+  background-color : #b8ff144f;
   border-style : none;
-  cursor : pointer;
+  display:block; 
+  margin-left:auto; 
+  margin-right:auto; 
+  padding:10px;
+  width: 850px;
+  text-align: center;
 }
-button:hover 
-{ 
-  background-color:white;
+.best_c{
+  margin: 5px 15px;
+  display: inline-block;
 }
