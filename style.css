@@ -1,12 +1,7 @@
 body{
   background-color: white;
-<<<<<<< HEAD
   margin: 0 auto;
   width: 1115px;
-=======
-  margin-left: 100px;
-  margin-right: 100px;
->>>>>>> hjongha-patch-1
 }
 .nav{
   background-color: white;
@@ -18,7 +13,6 @@ img{
 .nav-home{
   display: inline-block;
 }
-<<<<<<< HEAD
 .logo{
   background-color : white;
   border : 0;
@@ -34,13 +28,6 @@ img{
   cursor : pointer;
   text-align: center;
   margin-left: 25px;
-=======
-.menu{
-  background-color : white;
-  border : 0;
-  cursor : pointer;
-  text-align: center;
->>>>>>> hjongha-patch-1
 }
 .nav-search{
   border:3px  solid #b8ff14; 
@@ -54,7 +41,6 @@ img{
 .button{
   font-size: 25px;
 }
-<<<<<<< HEAD
 .container{ 
   position: relative;
   height: 700px;
@@ -70,19 +56,10 @@ img{
   margin-right: 60px;
   position: absolute;
   right: 0;
-=======
-.new-nav{
-  text-align: left;
-  background-color: white;
-}
-.log-in-line{
-  display: inline-block;
->>>>>>> hjongha-patch-1
 }
 fieldset { 
   color : #888888;
   display : inline;
-<<<<<<< HEAD
 }
 .shopping{
   background-color : #b8ff144f;
@@ -97,17 +74,13 @@ fieldset {
 .best_c{
   margin: 5px 15px;
   display: inline-block;
-=======
-  float: right;
 }
-.shopping
-{
-  background-color : linen;
-  border-style : none;
-  cursor : pointer;
-}
-button:hover 
-{ 
-  background-color:white;
->>>>>>> hjongha-patch-1
+
+.Other_menu{
+	border: 0;
+	background-color: white; 
+	color: #A0A0A0; 
+	text-align: center;
+	margin-bottom: 40px;
+	width: 100%;
 }
