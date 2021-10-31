@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<title>Since9697 패션갤러리</title>
+		<link href="style.css" rel="stylesheet" type="text/css"/>
+		<script src="since9697.js"></script>
+	</head>
+	<body>
+		<div class="nav">
+			<div class="nav-home">
+				<a href="" style="text-decoration:none;">
+					<button class="logo" type="image" style="cursor:pointer;">
+						<img src="since9697.jpg" width="200px" height="120px;">
+					</button>
+				</a>
+			</div>
+			<div class="nav-home">
+				<form action="" method="get">
+					<div class="nav-search"> <!-- 검색창 테두리 -->
+						<input class="search" type="text" size="50" placeholder="갤러리&통합검색" >
+						<button class="button" type="image" >
+							<img src="search.jpg" alt="이미지 버튼" height="35">
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<hr>
+		<div class="container">
+			<div class="column_left">
+				<p id="top" onclick="top_print()" style="background-color:#E7F7F7;">상의</p>
+				<script>
+				function top_print() {
+					var top = document.getElementById("top");
+					top.innerHTML="<img src='./top/top1.jpg' width='100px' height='100px'>";
+				}
+				</script>
+				<div class="pants" type="image">
+					
+				</div>
+				
+			</div>
+			<div class="column_right" style="width:300px; height:100px; margin-right: 0px;">
+				<form name="login">
+					<fieldset style="">
+						<script>
+							document.write(memid[id_index]+"님 환영합니다!");
+						</script>
+						<br>
+						<a href=""><input type="button" value="내 옷장"></a>
+						<a href="since9697.html"><input type="button" value="로그아웃"></a>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
