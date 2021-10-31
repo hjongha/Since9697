@@ -1,113 +1,137 @@
-body{
+body {
+  font-family: sans-serif;
   background-color: white;
-<<<<<<< HEAD
+  margin: 50 auto;
+  text-align: center;
+}
+.file-upload {
+  background-color: #ffffff;
+  width: 600px;
   margin: 0 auto;
-  width: 1115px;
-=======
-  margin-left: 100px;
-  margin-right: 100px;
->>>>>>> hjongha-patch-1
+  padding: 20px;
 }
-.nav{
-  background-color: white;
+
+.file-upload-btn {
+  width: 50%;
+  margin: 0;
+  color: #fff;
+  background: #1FB264;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 4px solid #15824B;
+  transition: all .2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.file-upload-btn:hover {
+  background: #1AA059;
+  color: #ffffff;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.file-upload-btn:active {
+  border: 0;
+  transition: all .2s ease;
+}
+
+.file-upload-content {
+  display: none;
   text-align: center;
 }
-img{
-  vertical-align: middle;
+
+.file-upload-input {
+  position: absolute;
+  margin: 0 auto;
+  padding: 0;
+  width: 50%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+  cursor: pointer;
 }
-.nav-home{
-  display: inline-block;
-}
-<<<<<<< HEAD
-.logo{
-  background-color : white;
-  border : 0;
-  cursor : pointer;
-  text-align: center;
-}
-.menu{
-  background-color : #b8ff14;
-  font-size: 16;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  border : 0;
-  cursor : pointer;
-  text-align: center;
-  margin-left: 25px;
-=======
-.menu{
-  background-color : white;
-  border : 0;
-  cursor : pointer;
-  text-align: center;
->>>>>>> hjongha-patch-1
-}
-.nav-search{
-  border:3px  solid #b8ff14; 
-  border-radius:5px; 
-  background-color:white;
-}
-.search{
-  border-style : none;
-  font-size : 15px;
-}
-.button{
-  font-size: 25px;
-}
-<<<<<<< HEAD
-.container{ 
+
+.image-upload-wrap {
+  margin-top: 20px;
+  border: 4px dashed #1FB264;
   position: relative;
-  height: 700px;
-  width: 100%;
-  padding: 20px 30px;
-  margin: auto auto;
 }
-.column_left{
-  position: absolute;
-  left: 0;
+
+.image-dropping,
+.image-upload-wrap:hover {
+  background-color: #1FB264;
+  border: 4px dashed #ffffff;
 }
-.column_right{
-  margin-right: 60px;
-  position: absolute;
-  right: 0;
-=======
-.new-nav{
-  text-align: left;
-  background-color: white;
+
+.image-title-wrap {
+  padding: 0 15px 15px 15px;
+  color: #222;
 }
-.log-in-line{
-  display: inline-block;
->>>>>>> hjongha-patch-1
-}
-fieldset { 
-  color : #888888;
-  display : inline;
-<<<<<<< HEAD
-}
-.shopping{
-  background-color : #b8ff144f;
-  border-style : none;
-  display:block; 
-  margin-left:auto; 
-  margin-right:auto; 
-  padding:10px;
-  width: 850px;
+
+.drag-text {
   text-align: center;
 }
-.best_c{
-  margin: 5px 15px;
-  display: inline-block;
-=======
-  float: right;
+
+.drag-text h3 {
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #15824B;
+  padding: 60px 0;
 }
-.shopping
-{
-  background-color : linen;
-  border-style : none;
-  cursor : pointer;
+
+.file-upload-image {
+  max-height: 200px;
+  max-width: 200px;
+  margin: auto;
+  padding: 20px;
 }
-button:hover 
-{ 
-  background-color:white;
->>>>>>> hjongha-patch-1
+.compare-image{
+  width: 200px;
+  margin: 0;
+  color: #fff;
+  background: #42dac5;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 4px solid #3cb8a7;
+  transition: all .2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.compare-image:hover {
+  background: #5dc7b9;
+  color: #ffffff;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.remove-image {
+  width: 200px;
+  margin: 0;
+  color: #fff;
+  background: #cd4535;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 4px solid #b02818;
+  transition: all .2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.remove-image:hover {
+  background: #c13b2a;
+  color: #ffffff;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.remove-image:active {
+  border: 0;
+  transition: all .2s ease;
 }
