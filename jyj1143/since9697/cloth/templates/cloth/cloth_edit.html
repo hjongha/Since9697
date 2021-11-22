@@ -1,0 +1,89 @@
+{% extends "post/layout.html" %}
+{% load static %}
+
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/new_post.css' %}">
+{% endblock %}
+
+
+
+{% block content %}
+<div id="main_container">
+    <div class="post_form_container">
+        <form action="#" class="post_form" method="post" enctype="multipart/form-data">
+            <div class="title">
+                Edit Cloth
+            </div>
+            <div class="preview">
+                <div class="upload">
+                    <div class="post_btn">
+                        {% if cloth %}
+                            <p><img id="img_id" src="{{ cloth.photo.url }}" style="width: 300px; height: 300px; object-fit: cover" ></p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            
+            {% csrf_token %}
+            <!-- {{ form.as_table }} -->
+            
+            <label for="id_season">Season:</label>
+                <select name="season" id="id_season">
+                    <option value="사계절">사계절</option>
+
+                    <option value="봄">봄</option>
+
+                    <option value="여름">여름</option>
+
+                    <option value="가을">가을</option>
+
+                    <option value="겨울">겨울</option>
+
+                </select>
+                <label for="id_part">Part:</label>
+                    <select name="part" id="id_part">
+                        <option value="상의">상의</option>
+
+                        <option value="하의">하의</option>
+    
+                    </select>
+            
+            
+            <input class="submit_btn" type="submit" value="수정완료">
+        </form>
+    </div>
+</div>
+<script>
+    const photo = document.querySelector('#img_id');
+    // document.querySelector('#photo-clear_id').remove();
+    // document.querySelector("label[for='photo-clear_id']").remove();
+    
+    
+    function upload_img(input) {
+        var reader = new FileReader();
+        if (input.files && input.files[0]){
+            reader.onload = function (e) {
+            photo.setAttribute('src',e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    let idPhoto = document.querySelector('#id_photo');
+    
+    idPhoto.addEventListener('change',function(){
+        upload_img(this);
+    });
+
+
+
+</script>
+
+
+
+
+{% endblock %}
+
+
+
