@@ -1,0 +1,151 @@
+{% extends "cloth/layout.html" %}
+{% load static %}
+
+{% block head %}
+
+<link rel="stylesheet" href="{% static 'css/mylist.css' %}">
+<link rel="stylesheet" href="{% static 'css/common.css' %}">
+<link rel="stylesheet" href="{% static 'css/profile.css' %}">
+
+{% endblock %}
+
+{% block content %}
+<div id="main_container">
+
+       <section class="b_inner">
+
+            <div class="hori_cont">
+                <div class="profile_wrap">
+                    <div class="profile_img">
+                        {% if user_profile.picture %}
+                        <img src="{{ user_profile.picture.url }}" alt="착한호랑이">
+                        {% else %}
+                        <img src="{% static 'imgs/img_section/img01.jpg' %}" alt="착한호랑이">
+                        {% endif %}
+                    </div>
+                </div>
+
+                <div class="detail">
+                    <div class="top">
+                        <div class="user_name">{{ user.profile.nickname }}</div>
+                        <a href="{% url 'accounts:logout' %}" class="logout">로그아웃</a>
+                    </div>
+
+                    <ul class="middle">
+                        <li>
+                            <span>내 옷</span>
+                            {{ user.cloth_set.count }}
+                        </li>
+                      
+                    </ul>
+                    
+
+                </div>
+            </div>
+            <h1>상의</h1>
+            <div class="mylist_contents contents_container active">
+                {% for cloth in cloth_list %}
+                {% if '상의' in cloth.part %}
+                <div class="pic" style="max-height: none; border: 1px solid #000000;">
+                    <div>
+                                 <form action="{% url 'cloth:cloth_delete'  cloth.pk   user.username %}" method="post">
+                                    {% csrf_token %}
+                                    <input type="submit" value="삭제">
+                                    
+                                </form> 
+                                
+                     </div>
+                    
+                    <a href="{% url 'cloth:cloth_edit' cloth.pk   user.username %}"><img src="{{ cloth.photo.url }}"  style=" height:200px;" alt=""></a>
+                    <br> 
+                    
+                    <div style="background-color:rgb({{ cloth.r_color }},{{ cloth.g_color }}, 
+                                {{ cloth.b_color }}) ; height: 24px;width: 24px;float: left; border: 1px solid #000000;">
+                        
+                    </div>
+                   <!-- <span style="color:red;">({{ cloth.r_color }}, </span>
+                    <span style="color:green;">{{ cloth.g_color }}, </span>
+                    <span style="color:blue;">{{ cloth.b_color }})</span><br>-->
+                    <span>   {{ cloth.season }}, {{ cloth.part }}   </span><br><br>
+                   
+                    <span><a href="{% url 'cloth:cloth_recommend_tot' cloth.pk   user.username %}">톤온톤 </a> <br><a href="{% url 'cloth:cloth_recommend_tit' cloth.pk   user.username %}">톤인톤 </a></span>
+                    
+                </div>
+                {% endif %}
+                {% endfor %}
+                
+                
+                
+            </div>
+           
+           
+            <h1>하의</h1>
+           
+           <div class="mylist_contents contents_container active">
+                {% for cloth in cloth_list %}
+                {% if '하의' in cloth.part %}
+                <div class="pic" style="max-height: none; border: 1px solid #000000;">
+                    <div>
+                                 <form action="{% url 'cloth:cloth_delete'  cloth.pk   user.username %}" method="post">
+                                    {% csrf_token %}
+                                    <input type="submit" value="삭제">
+                                    
+                                </form> 
+                                
+                     </div>
+                    
+                    <a href="{% url 'cloth:cloth_edit' cloth.pk   user.username %}"><img src="{{ cloth.photo.url }}"  style=" height:200px;" alt=""></a>
+                    <br> 
+                    
+                    <div style="background-color:rgb({{ cloth.r_color }},{{ cloth.g_color }}, 
+                                {{ cloth.b_color }}) ; height: 24px;width: 24px;float: left; border: 1px solid #000000;">
+                        
+                    </div>
+                   <!-- <span style="color:red;">({{ cloth.r_color }}, </span>
+                    <span style="color:green;">{{ cloth.g_color }}, </span>
+                    <span style="color:blue;">{{ cloth.b_color }})</span><br>-->
+                    <span>   {{ cloth.season }}, {{ cloth.part }}   </span><br><br>
+                    
+                    <span><a href="{% url 'cloth:cloth_recommend_tot' cloth.pk   user.username %}">톤온톤 </a> <br><a href="{% url 'cloth:cloth_recommend_tit' cloth.pk   user.username %}">톤인톤 </a></span>
+                    
+                </div>
+                {% endif %}
+                {% endfor %}
+                
+                
+                
+            </div>
+            <!--<div class="mylist_contents contents_container active">
+                {% for cloth in cloth_list %}
+                {% if '하의' in cloth.part %}
+                <div class="pic">
+                    <a href="{% url 'cloth:cloth_recommend' cloth.pk   user.username %}"><img src="{{ cloth.photo.url }}"  style=" height:200px;" alt=""></a>
+                    <br> 
+                    <div style="background-color:rgb({{ cloth.r_color }},{{ cloth.g_color }}, 
+                                {{ cloth.b_color }}) ; height: 24px;width: 24px;float: left; border: 1px solid #000000;">
+                        
+                    </div>
+                   <!-- <span style="color:red;">({{ cloth.r_color }}, </span>
+                    <span style="color:green;">{{ cloth.g_color }}, </span>
+                    <span style="color:blue;">{{ cloth.b_color }})</span><br>
+                    <span>   {{ cloth.season }}, {{ cloth.part }} </span>
+                </div>
+                {% endif %}
+                {% endfor %}
+                
+                
+                
+            </div>-->
+           
+
+
+
+        </section>
+    </div>
+
+
+{% endblock %}
+
+{% block js %}
+    
+{% endblock %}
