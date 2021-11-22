@@ -1,0 +1,132 @@
+{% extends "post/layout.html" %}
+{% load static %}
+
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/mylist.css' %}">
+<link rel="stylesheet" href="{% static 'css/common.css' %}">
+<link rel="stylesheet" href="{% static 'css/profile.css' %}">
+
+{% endblock %}
+
+
+
+{% block content %}
+   <!-- <div id="main_container">
+        <div class="post_form_container">
+            <form action="#" class="post_form">
+                <div class="title">
+                    CLOTH RECOMMEND
+                </div>
+                <div class="preview">
+                    <div class="upload">
+                        <div class="post_btn">
+                            <div class="plus_icon">
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <p>포스트 이미지 추가</p>
+                            <canvas id="imageCanvas"></canvas>
+                            <p><img id="img_id" src="{{ cloth.photo.url }}" style="width: 300px; height: 300px; object-fit: cover" alt="thumbnail"></p>
+                        </div>
+                    </div>
+                </div>
+				
+                <!--<p>
+                    <input type="file" name="photo" id="id_photo" required="required">
+                </p>
+				
+				<p>옷 종류</p>
+                <label><input type="checkbox" name="옷 종류" value="하의"> 하의</label>
+                <label><input type="checkbox" name="옷 종류" value="상의"> 상의</label>
+	            <label><input type="checkbox" name="옷 종류" value="모자"> 모자</label>
+	            <label><input type="checkbox" name="옷 종류" value="신발"> 신발</label>
+                <p><input type="submit" value="Submit"> <input type="reset" value="Reset"></p>
+				<p>계절</p>
+                <label><input type="checkbox" name="봄" value="봄"> 봄</label>
+                <label><input type="checkbox" name="여름" value="여름"> 여름</label>
+	            <label><input type="checkbox" name="가을" value="가을"> 가을</label>
+	            <label><input type="checkbox" name="겨울" value="겨울"> 겨울</label>
+                <p><input type="submit" value="Submit"> <input type="reset" value="Reset"></p>
+                </form>
+                
+                <input class="submit_btn" type="submit" value="추천">
+				
+            
+			<form action="#" class="post_form">
+                <div class="title">
+                    추천 되어진 옷
+                </div>
+                <div class="preview">
+                    <div class="upload">
+                        <div class="post_btn">
+                            <div class="plus_icon">
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <p>포스트 이미지 추가</p>
+                            <canvas id="imageCanvas"></canvas>
+                            <p><img id="img_id" src="imgs/img_section/cloth05.jpg" style="width: 300px; height: 300px; object-fit: cover" alt="thumbnail"></p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+			
+			
+        </div>
+
+    </div>
+        
+-->
+<div id="main_container">
+
+       <section class="b_inner">
+           
+            <div class="mylist_contents contents_container active">
+                    
+                {% if '상의' in cloth.part %}
+                {% for roco in reco_list %}
+                
+                <div class="pic" style="max-height: none; border: 1px solid #000000;">
+                    <img src="{{ cloth.photo.url }}"  style=" height:200px;" alt="">
+                    <img src="{{ roco.photo.url }}"  style=" height:200px;" alt="">
+                    <br>
+                    
+                    <div style="background-color:rgb({{ cloth.r_color }},{{ cloth.g_color }}, {{ cloth.b_color }}) ; height: 24px;width: 24px;float: left;"></div>
+                    <div style="background-color:rgb({{ roco.r_color }},{{ roco.g_color }}, {{ roco.b_color }}) ; height: 24px;width: 24px;float: left;"></div>
+                   <!-- <span style="color:red;">({{ cloth.r_color }}, </span>
+                    <span style="color:green;">{{ cloth.g_color }}, </span>
+                    <span style="color:blue;">{{ cloth.b_color }})</span><br>-->
+                    
+                    <span>   {{ roco.season }}, {{ roco.part }} </span>
+                </div>
+                
+                {% endfor %}
+                {% else %}
+                {% for roco in reco_list %}
+                
+                <div class="pic" style="max-height: none; border: 1px solid #000000;">
+                    
+                    <img src="{{ roco.photo.url }}"  style=" height:200px;" alt="">
+                    <img src="{{ cloth.photo.url }}"  style=" height:200px;" alt="">
+                    <br>
+                    
+                    <div style="background-color:rgb({{ roco.r_color }},{{ roco.g_color }}, {{ roco.b_color }}) ; height: 40px;width: 40px;float: left; border: 1px solid #000000;"></div>
+                    <div style="background-color:rgb({{ cloth.r_color }},{{ cloth.g_color }}, {{ cloth.b_color }}) ; height: 40px;width: 40px;float: left; border: 1px solid #000000;"></div>
+                   <!-- <span style="color:red;">({{ cloth.r_color }}, </span>
+                    <span style="color:green;">{{ cloth.g_color }}, </span>
+                    <span style="color:blue;">{{ cloth.b_color }})</span><br>-->
+                    
+                    <span>   {{ roco.season }}, {{ roco.part }} </span>
+                </div>
+                
+                {% endfor %}
+                {% endif %}
+                
+                
+                
+              </div>
+        </section>
+    </div>
+{% endblock %}
+
