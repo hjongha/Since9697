@@ -1,0 +1,56 @@
+body{
+  background-color: white;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.nav{
+  background-color: white;
+  text-align: center;
+}
+img{
+  vertical-align: middle;
+}
+.nav-home{
+  display: inline-block;
+}
+.menu{
+  background-color : white;
+  border : 0;
+  cursor : pointer;
+  text-align: center;
+}
+.nav-search{
+  border:3px  solid #b8ff14; 
+  border-radius:5px; 
+  background-color:white;
+}
+.search{
+  border-style : none;
+  font-size : 15px;
+}
+.button{
+  font-size: 25px;
+}
+.new-nav{
+  text-align: left;
+  background-color: white;
+}
+.log-in-line{
+  display: inline-block;
+}
+fieldset { 
+  color : #888888;
+  display : inline;
+  float: right;
+}
+
+.shopping
+{
+  background-color : linen;
+  border-style : none;
+  cursor : pointer;
+}
+button:hover 
+{ 
+  background-color:white;
+}
